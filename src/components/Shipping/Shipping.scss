@@ -1,0 +1,28 @@
+@import "../../index.scss";
+.shipping {
+  display: flex;
+  gap: 20px;
+
+  .shipping-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.checkbox-round {
+  width: 1.2em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: $green-color;
+  padding: 2px;
+}

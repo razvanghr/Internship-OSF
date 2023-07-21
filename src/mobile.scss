@@ -1,0 +1,20 @@
+// Responsive
+
+// Cart Page
+@media only screen and (max-width: 1111px) {
+  .cart-page {
+    .cartItems {
+      display: flex;
+      padding: 0px 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .cart-product {
+    gap: 1px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

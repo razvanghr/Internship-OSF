@@ -1,0 +1,60 @@
+@import "../../index.scss";
+
+.cookies-modal-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-end;
+  padding: 10px;
+
+  button {
+    border: 0;
+    color: #ffff;
+    background-color: $green-color;
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.cookies-card-text {
+  width: 80%;
+  p {
+    font-size: 0.9rem;
+    color: "#83807e";
+  }
+
+  h1 {
+    font-size: 1rem;
+    color: $green-color;
+  }
+
+  a {
+    color: $green-color;
+  }
+}
+
+.cookies-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// Responsive
+
+@media screen and (max-width: 768px) {
+  .cookies-modal-card {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

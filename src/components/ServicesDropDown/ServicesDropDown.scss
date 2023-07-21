@@ -1,0 +1,54 @@
+@import "../../index.scss";
+
+.services-dropdown {
+  padding: 50px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 100%;
+  left: 0;
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+
+  a {
+    color: #ffff;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .services-dropdown-text {
+    margin: 0px 220px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .drop-down-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: start;
+  }
+  .drop-down-lists {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    a {
+      color: #ffff;
+    }
+
+    .service-list {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+}

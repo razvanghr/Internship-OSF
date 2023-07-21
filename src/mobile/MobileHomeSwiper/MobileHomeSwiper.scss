@@ -1,0 +1,77 @@
+.mobile-slider-card {
+  display: flex;
+
+  position: relative;
+}
+
+.mobile-slider-card-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: relative;
+}
+
+.mobile-slider-card-text {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  top: 100px;
+  gap: 100px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mobile-slider-card-text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: #ffff;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.header-button {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  color: #ffff;
+  border: 1px solid #ffff;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.mobile-home-swiper {
+  background-color: #ffff;
+  margin: 50px 0px;
+}
+
+// Resposive
+
+@media screen and (max-width: 940px) {
+  .mobile-home-swiper {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-home-swiper {
+    margin-top: 100px;
+  }
+}

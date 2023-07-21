@@ -1,0 +1,108 @@
+@import "../../index.scss";
+
+// Release Page
+.release-page-container {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+  h1 {
+    color: #45413e;
+  }
+}
+
+.release-page {
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  gap: 100px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+// Header
+
+.release-header {
+  text-align: center;
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+}
+
+// Clock
+.release-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.clock-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    border: 3px solid;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #c8cdd1;
+  }
+
+  p {
+    font-weight: 700;
+  }
+}
+
+// Input
+
+.release-input {
+  border: 1px solid #c8cdd1;
+  display: flex;
+  align-items: center;
+  min-width: 70%;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 20px;
+
+  input {
+    border: 0;
+    outline: 0;
+    flex: 2;
+  }
+}
+
+.release-loading {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 300px;
+}
+
+// Responsive
+
+@media screen and (max-width: 794px) {
+  .release-page {
+    margin-top: 100px;
+    gap: 20px;
+  }
+
+  .release-clock {
+    flex-direction: column;
+  }
+}

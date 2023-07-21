@@ -1,0 +1,143 @@
+@import "../../index.scss";
+
+.non-product-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1edea;
+  gap: 30px;
+  width: 100%;
+  height: auto;
+
+  //   Header---------------------
+
+  header {
+    text-align: center;
+    margin-top: 150px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+      color: $green-color;
+    }
+
+    .error404-header-intro {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      hr {
+        color: #e5e2df;
+        background-color: #e5e2df;
+        border: 0;
+        height: 3px;
+        width: 450px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #45413e;
+      }
+    }
+  }
+
+  //   Error-404- content-main
+
+  .non-product-content {
+    border-radius: 5px;
+    padding: 50px 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 70%;
+    margin-bottom: 50px;
+
+    .error-content-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 1.5rem;
+        color: black;
+      }
+
+      p {
+        color: #45413e;
+        font-size: 1rem;
+      }
+
+      a {
+        color: $green-color;
+      }
+
+      .error-search-content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .error-search-input {
+          border-radius: 30px;
+          display: flex;
+          justify-content: space-between;
+          border: 2px solid #e8e2d6;
+          padding: 5px;
+
+          input {
+            border: 0;
+            outline: 0;
+            flex: 2;
+            text-align: center;
+
+            &::placeholder {
+              padding-left: 20px;
+              text-align: start;
+            }
+          }
+
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.error-title {
+  font-size: 7rem;
+  color: $green-color;
+  font-weight: 800;
+}
+
+// Responsive = Phone
+
+@media screen and (max-width: 850px) {
+  .non-product-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .non-product-content {
+    text-align: center;
+  }
+
+  .error-title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .non-product-page {
+    .non-product-content {
+      width: 90%;
+    }
+  }
+}

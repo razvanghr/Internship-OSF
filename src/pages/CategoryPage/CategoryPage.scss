@@ -1,0 +1,150 @@
+@import "../../index.scss";
+
+// Category Page
+
+.category-page {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1edea;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+
+  //   Header
+  .category-header {
+    text-align: center;
+    a {
+      color: $green-color;
+    }
+
+    .category-header-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    hr {
+      color: #e5e2df;
+      background-color: #e5e2df;
+      border: 0;
+      height: 3px;
+      width: 450px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #45413e;
+    }
+  }
+
+  //   Category Filter
+
+  .filter-selector {
+    border-radius: 20px;
+    outline: 0;
+    padding: 5px 10px;
+    border: 2px solid #a2a09e;
+    width: 150px;
+    color: #45413e;
+  }
+
+  .category-filter {
+    display: flex;
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .filter-container {
+      padding: 20px;
+
+      .form-selector {
+        padding: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        align-items: center;
+
+        label {
+          width: 50px;
+        }
+
+        .color-btn {
+          width: 150px;
+        }
+
+        button {
+          border: none;
+          padding: 8.5px;
+          border-radius: 50%;
+          margin: 2px;
+        }
+      }
+    }
+  }
+}
+
+.bold {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.active-color {
+  border: 2px solid black;
+}
+// Category product
+
+.category-product-card {
+  background-color: #ffff;
+  width: 270px;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+
+  img {
+    width: 270px;
+    height: 260px;
+  }
+}
+
+.category-product {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-products {
+  text-align: center;
+  width: 80%;
+  button {
+    background-color: $green-color;
+    color: #ffff;
+    border: 0;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    margin: 50px;
+  }
+}
+
+//   Responsive
+
+// 320PX
+
+@media only screen and (max-width: 320px) {
+  .showFilter {
+    display: block;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../index.scss";
+
+.slider-card {
+  width: 100%;
+  position: relative;
+
+  .slider-card-image {
+    width: 100%;
+    height: 500px;
+  }
+
+  .slider-card-text {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    color: #ffff;
+    top: 0;
+    color: black;
+    flex-direction: column;
+    padding: 40px;
+    gap: 100px;
+
+    .slider-card-text-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ffff;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #ffff;
+    }
+
+    .header-button {
+      width: 150px;
+      height: 40px;
+      background-color: transparent;
+      color: #ffff;
+      border: 1px solid #ffff;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+.slick-list {
+  width: 870px;
+}

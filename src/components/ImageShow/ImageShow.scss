@@ -1,0 +1,54 @@
+@import "../../index.scss";
+
+.image-show {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-image-show {
+  position: relative;
+  img {
+    width: 500px;
+    height: auto;
+  }
+}
+
+.secondary-image-show {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.active {
+  border: 2px solid $green-color;
+}
+
+.zoom-image {
+  position: absolute;
+  left: 0;
+  padding: 5px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 787px) {
+  .image-show {
+    .main-image-show {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .secondary-image-show {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

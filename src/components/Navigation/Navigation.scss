@@ -1,0 +1,88 @@
+@import "/src/index.scss";
+
+.navigation {
+  width: 100%;
+  position: fixed;
+  background-color: #ffff;
+  justify-content: space-around;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(235, 233, 233);
+  gap: 5rem;
+  z-index: 2;
+  top: 0;
+}
+
+// Navigation Left-Side
+
+.navigation-left {
+  display: flex;
+  text-align: center;
+
+  .logo-text {
+    .logo-text-1 {
+      font-size: 1.9rem;
+      color: $logo-prim-color;
+      letter-spacing: 6px;
+      font-weight: 900;
+    }
+
+    .logo-text-2 {
+      font-size: 1.1rem;
+      color: $logo-sec-color;
+    }
+  }
+}
+
+// Navigation Right - Side
+
+.navigation-right {
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  .navigation-links {
+    display: flex;
+    gap: 2rem;
+    a {
+      font-weight: 600;
+      color: #979592;
+      font-size: 0.9rem;
+    }
+  }
+  .navigation-options {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .service {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  // Currency & Langage
+
+  select {
+    border: 0;
+    outline: 0;
+    color: #a8a6a5;
+
+    option {
+      &:hover {
+        background-color: #a8a6a5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .navigation {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .navigation-right {
+    flex-wrap: wrap;
+  }
+}

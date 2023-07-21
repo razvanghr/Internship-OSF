@@ -1,0 +1,150 @@
+//Cart Page
+
+@import "../../index.scss";
+
+.cart-page {
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1edea;
+  width: 100%;
+  height: auto;
+
+  //   Header
+  .cart-header {
+    text-align: center;
+    a {
+      color: $green-color;
+    }
+
+    .cart-header-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    hr {
+      color: #e5e2df;
+      background-color: #e5e2df;
+      border: 0;
+      height: 3px;
+      width: 450px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #45413e;
+    }
+  }
+
+  .cart-contet {
+    display: flex;
+    background-color: #ffff;
+  }
+}
+
+.cartItems {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding: 0px 100px;
+  background-color: #ffff;
+}
+
+// Checkout
+
+.checkout {
+  border-top: 2px solid #e8e2d6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  button {
+    border: 2px solid $green-color;
+    color: $green-color;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  .checkout-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    input {
+      border: 2px solid #e8e2d6;
+      border-radius: 20px;
+      outline: 0;
+      padding: 10px;
+      width: 220px;
+    }
+  }
+
+  .checkout-right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+
+    .checkout-btn {
+      background-color: $green-color;
+      color: #ffff;
+    }
+
+    .cart-subtotal {
+      display: flex;
+      gap: 20px;
+    }
+
+    .cart-total {
+      width: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+.bold {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.empty-cart {
+  font-size: 4rem;
+  color: #45413e;
+  padding: 200px 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// Responsive
+
+@media screen and (max-width: 790px) {
+  .cart-page {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart-page {
+    margin-top: 0px;
+  }
+}

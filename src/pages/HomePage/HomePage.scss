@@ -1,0 +1,149 @@
+@import "../../index.scss";
+
+.home-page {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  //   Header
+  .header {
+    width: 80%;
+    margin-top: 130px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .facebook-contact {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+      }
+
+      button {
+        margin-top: 10px;
+        display: flex;
+        width: 150px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: #3a5b96;
+        border: 1px solid #3a5b96;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+  //   Products
+  .products-home {
+    margin-top: 50px;
+    background-color: $bg-color;
+    text-align: center;
+
+    h1 {
+      padding-top: 50px;
+      color: #ffff;
+    }
+
+    .product {
+      margin-top: 30px;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .load-more {
+      color: #ffff;
+      background-color: transparent;
+      width: 260px;
+      height: 40px;
+      font-size: 0.9rem;
+      border: 2px solid #ffff;
+      border-radius: 20px;
+      transition: 0.2s;
+      margin-bottom: 70px;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  // Banner Main
+
+  .banner-main {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // Atributes Main
+}
+.atributes {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  background-color: #45413e;
+  padding: 40px 70px;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mobile-swiper-wrapper {
+  width: 100%;
+  background-color: $bg-color;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    color: #ffff;
+  }
+}
+
+// Responsive
+
+@media screen and (max-width: 1200px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .home-page .header .header-content {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

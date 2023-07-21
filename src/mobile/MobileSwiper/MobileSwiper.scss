@@ -1,0 +1,26 @@
+.mobile-swiper {
+  background-color: #f1edea;
+}
+
+.swiper-mobile-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f1edea;
+
+  p {
+    width: 200px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+  border: 2px solid #4c4f55;
+}
+
+.swiper-slide-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

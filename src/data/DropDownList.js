@@ -1,6 +1,17 @@
 export const LIST1 = [
-  "Accesories",
-  "Alcohol",
+  "Product",
+  "Sale",
+  "Art",
+  "Books",
+  "Drink",
+  "Electronics",
+  "Flowers & Plants",
+  "Food",
+];
+
+export const LIST1_MOBILE = ["Product Categories", "Sale"];
+
+export const LIST1_SUBMENU = [
   "Art",
   "Books",
   "Drink",

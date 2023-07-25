@@ -3,6 +3,7 @@ import React from "react";
 import MobileFooterList from "./MobileFooterList";
 import FooterNavigation from "./FooterNavigation";
 
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,

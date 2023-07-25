@@ -51,6 +51,7 @@ function MobileFooterList() {
           )}
         </div>
       ))}
+      <Link to="/release">RELEASE</Link>
     </div>
   );
 }

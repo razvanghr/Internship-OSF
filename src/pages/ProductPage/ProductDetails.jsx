@@ -26,6 +26,17 @@ function ProductDetails() {
   const [inputAmmount, setInputAmmount] = useState(1);
   const [loadMore, setLoadMore] = useState(false);
 
+  const addAmmount = () => {
+    setInputAmmount(inputAmmount + 1);
+  };
+
+  const removeAmmount = () => {
+    if (inputAmmount === 1) {
+      return;
+    }
+    setInputAmmount(inputAmmount - 1);
+  };
+
   // Add to Cart
   const { addToCartProduct } = useContext(ShopContext);
 
@@ -42,26 +53,14 @@ function ProductDetails() {
 
           <div className="cart-details">
             <div className="cart-handler">
-              <button
-                onClick={() => {
-                  setInputAmmount(inputAmmount - 1);
-                }}
-              >
-                -
-              </button>
+              <button onClick={removeAmmount}>-</button>
               <input
                 type="numeric"
                 value={inputAmmount}
                 onChange={(e) => setInputAmmount(e.target.value)}
                 style={{ backgroundColor: "transparent" }}
               />
-              <button
-                onClick={() => {
-                  setInputAmmount(inputAmmount + 1);
-                }}
-              >
-                +
-              </button>
+              <button onClick={addAmmount}>+</button>
             </div>
             <button
               className="add-to-cart"

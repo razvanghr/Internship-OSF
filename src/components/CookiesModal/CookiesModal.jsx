@@ -22,27 +22,45 @@ const style = {
 };
 
 function CookiesModal() {
-  const handleClose = () => setIsOpen(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const cookiesTimeout = setTimeout(() => {
       setIsOpen(true);
-    }, 3000);
+    }, 10000);
+
+    const cookieAccepted = localStorage.getItem("cookieAccepted");
+
+    if (cookieAccepted) {
+      clearTimeout(cookiesTimeout);
+    }
 
     return () => clearTimeout(cookiesTimeout);
   }, []);
+
+  const acceptCookie = () => {
+    localStorage.setItem("cookieAccepted", true);
+    setIsOpen(false);
+  };
+
+  const declineCookie = () => {
+    localStorage.setItem("cookieAccepted", false);
+    setIsOpen(false);
+  };
 
   return (
     <div>
       <Modal
         open={isOpen}
-        onClose={handleClose}
+        onClose={declineCookie}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <CookiesModalCard handleClose={handleClose} />
+          <CookiesModalCard
+            acceptCookie={acceptCookie}
+            declineCookie={declineCookie}
+          />
         </Box>
       </Modal>
     </div>

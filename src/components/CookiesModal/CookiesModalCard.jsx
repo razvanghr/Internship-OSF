@@ -4,7 +4,7 @@ import closeIcon from "../../assets/CookiesModalImages/close-icon.png";
 
 import { Link } from "react-router-dom";
 
-function CookiesModalCard({ handleClose }) {
+function CookiesModalCard({ acceptCookie, declineCookie }) {
   return (
     <div className="cookies-modal-card">
       <div className="cookies-card-text">
@@ -18,12 +18,12 @@ function CookiesModalCard({ handleClose }) {
           <Link to="/error404"> Cookies Policy Page.</Link>
         </p>
       </div>
-      <button onClick={handleClose}>Accept</button>
+      <button onClick={acceptCookie}>Accept</button>
       <img
         src={closeIcon}
         alt="Close Icon"
         className="cookies-close"
-        onClick={handleClose}
+        onClick={declineCookie}
       />
     </div>
   );
